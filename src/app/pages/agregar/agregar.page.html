@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>agregar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">agregar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label position="floating">Titulo noticia</ion-label>
+    <ion-input type="text" [(ngModel)]="tituloNoticia"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Texto noticia</ion-label>
+    <ion-input type="text" [(ngModel)]="textoNoticia"></ion-input>
+  </ion-item>
+
+  <ion-button shape="block" (click)="insertar()">Guardar cambio</ion-button>
+</ion-content>
